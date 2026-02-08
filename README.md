@@ -79,16 +79,21 @@ Navigation is implemented with **Jetpack Navigation Compose**.
 ### Main Screen — All Sections
 <p align="center">
   <img src="screen/prac_four_all_books.jpg" width="250"/>
+  <img src="screen/prac_four_all_books__white.jpg" width="250"/>
+  <img src="screen/search__input.jpg" width="250"/>
 </p>
 
 ### Selected Book Section
 <p align="center">
   <img src="screen/prac_selected_book.jpg" width="250"/>
+  <img src="screen/prac_selected_book__white.jpg" width="250"/>
+  <img src="screen/setings" width="250"/>
 </p>
 
 ### Pinch-to-Zoom Text
 <p align="center">
   <img src="screen/prac_four_selected_book_zoom.jpg" width="250"/>
+  <img src="screen/reset__size_zoom.jpg" width="250"/>
 </p>
 
 ### About & Feedback Screen
