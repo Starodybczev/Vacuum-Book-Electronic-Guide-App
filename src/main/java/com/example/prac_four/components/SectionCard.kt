@@ -13,28 +13,30 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.prac_four.feature.highlightAll
 import com.example.prac_four.types.BookSection
 
 @Composable
 fun SectionCard(
-    section: BookSection,
-    onClick: () -> Unit
+    query: String,
+    section: BookSection? = null,
+    onClick: (() -> Unit)? = null,
+    task: List<BookSection>
 ) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp)
-            .clickable { onClick() }
+            .clickable { onClick?.invoke() }
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
 
             Text(
-                text = section.title,
+                text = highlightAll(section?.title ?: "", query),
                 fontSize = 18.sp
             )
 
             Text(
-                text = section.preview,
+                text = section?.preview ?: "unknown",
                 fontSize = 14.sp,
                 color = Color.Gray,
                 maxLines = 2,
@@ -43,7 +45,7 @@ fun SectionCard(
             )
 
             Text(
-                text = section.author,
+                text = section?.author ?: "unknown" ,
                 fontSize = 12.sp,
                 color = Color.DarkGray,
                 modifier = Modifier
@@ -53,3 +55,4 @@ fun SectionCard(
         }
     }
 }
+

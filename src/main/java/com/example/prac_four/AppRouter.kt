@@ -14,13 +14,17 @@ import androidx.navigation.navArgument
 import com.example.prac_four.components.Footer
 import com.example.prac_four.components.Header
 import com.example.prac_four.data.loadLastSection
+import com.example.prac_four.data.saveLastSection
 import com.example.prac_four.data.vacuumBook
 import com.example.prac_four.pages.AboutAs
 import com.example.prac_four.pages.SectionScreen
 
 @Composable
-fun AppRouter(){
+fun AppRouter(onToggleTheme: () -> Unit) {
     val naveControl = rememberNavController()
+
+
+
 
 
     val context = LocalContext.current
@@ -35,7 +39,10 @@ fun AppRouter(){
     }
 
     Scaffold(
-        topBar = { Header(naveControl) },
+        topBar = { Header(
+            naveControl, onToggleTheme = onToggleTheme,
+            onAbout = { naveControl.navigate("about_us") }
+        ) },
         bottomBar = { Footer() }
     ) { paddingValues ->
         NavHost(
