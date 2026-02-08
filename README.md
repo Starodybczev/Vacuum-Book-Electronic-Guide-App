@@ -63,6 +63,7 @@ The project fully satisfies the assignment requirements:
 The project follows a **clean, UI-focused architecture**:
 
 - `pages` — application screens
+- `features` - features app
 - `components` — reusable UI components
 - `data` — book content and persistence
 - `types` — data models
