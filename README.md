@@ -63,6 +63,7 @@ The project fully satisfies the assignment requirements:
 The project follows a **clean, UI-focused architecture**:
 
 - `pages` — application screens
+- `features` - features app
 - `components` — reusable UI components
 - `data` — book content and persistence
 - `types` — data models
@@ -78,16 +79,21 @@ Navigation is implemented with **Jetpack Navigation Compose**.
 ### Main Screen — All Sections
 <p align="center">
   <img src="screen/prac_four_all_books.jpg" width="250"/>
+  <img src="screen/prac_four_all_books__white.jpg" width="250"/>
+  <img src="screen/search__input.jpg" width="250"/>
 </p>
 
 ### Selected Book Section
 <p align="center">
   <img src="screen/prac_selected_book.jpg" width="250"/>
+  <img src="screen/prac_selected_book__white.jpg" width="250"/>
+  <img src="screen/setings.jpg" width="250"/>
 </p>
 
 ### Pinch-to-Zoom Text
 <p align="center">
   <img src="screen/prac_four_selected_book_zoom.jpg" width="250"/>
+  <img src="screen/reset__size_zoom.jpg" width="250"/>
 </p>
 
 ### About & Feedback Screen
@@ -128,6 +134,10 @@ Navigation is implemented with **Jetpack Navigation Compose**.
   - real-world UX scenarios
 
 ---
+
+<p align="center">
+  <img src="https://i.gifer.com/origin/f6/f68740c9bc60626586df868e5efa830b_w200.gif" width="400" />
+</p>
 
 ## 📄 License
 
