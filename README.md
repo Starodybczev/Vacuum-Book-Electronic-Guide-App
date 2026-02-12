@@ -59,6 +59,14 @@ The project fully satisfies the assignment requirements:
 
 ---
 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Starodybczev/Vacuum-Book-Electronic-Guide-App/main/screen/skell.gif" width="700" />
+</p>
+
+
+---
+
 ## 🧱 Architecture
 
 The project follows a **clean, UI-focused architecture**:
